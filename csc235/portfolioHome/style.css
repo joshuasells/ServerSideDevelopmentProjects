@@ -1,0 +1,30 @@
+.frame {
+  padding: 30px 10%;
+  margin: auto;
+  background-color: #F2F8F5;
+  max-width: 1800px;
+  min-width: 300px;
+}
+
+h1, h2 {
+  background-color: #F2F8F5;
+  padding: 15px 20px 15px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  color: #474747;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #57C7A2;
+  color: #F2F8F5;
+  text-decoration: none;
+  font-weight: bold;
+}

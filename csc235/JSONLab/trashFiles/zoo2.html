@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- zoo.html - Show how to parse through a JSON object
+  Joshua Sells - joshuataylorsells@gmail.com
+  Written: 12/16/2020
+  -->
+  <title>MyZoo</title>
+  <script>
+    // var myZoo = {"zoo": {"animal":"lion" }};
+    var myZoo = {"zoo": [
+      { "animal":"Elephant-Cat", "population":4, "habitat":"Savana", "nocturnal":false },
+      { "animal":"Bustard", "population":12, "habitat":"Mountains of Zoma-ma-Tant", "nocturnal":true },
+      { "animal":"Joats", "population":5, "habitat":"Tropical Wetlands", "nocturnal":true },
+      { "animal":"Mulligatawny", "population":1, "habitat":"Desert of Zind", "nocturnal":false }
+    ]
+    };
+  </script>
+
+  <!-- Insert the CSS styles-->
+  <link rel="stylesheet" type="text/css" href="zoo.css">
+</head>
+<body>
+  <div id="frame">
+    <h1>My Zoo</h1>
+    I have a small zoo it contains
+    <script>
+      document.write(myZoo.zoo[3].population + " " + myZoo.zoo[3].animal + "s.<br />");
+      document.write("<h3>Here is the list of animals in my zoo:</h3>");
+      // loop through list of animals and write onto page.
+      document.write("<ul>");
+      for (var count = 0; count < myZoo.zoo.length; count++) {
+        document.write("<li>" + myZoo.zoo[count].animal + "</li>");
+      }
+      document.write("</ul>");
+    </script>
+  </div>
+</body>
+</html>

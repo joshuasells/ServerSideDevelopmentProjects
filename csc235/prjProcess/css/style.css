@@ -1,0 +1,126 @@
+/* style.css - Style sheet for Employee schedule Application.
+    Joshua Sells
+    Written: 12/01/2020
+    Revised:
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navigation styles */
+
+li, a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks, li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navLinks li a {
+  cursor: pointer;
+}
+
+body {
+  background: #EEE;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 5px;
+  float: left;
+  color: #000080;
+}
+
+h2, h3 {
+  color: #000080;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+}
+
+#frame {
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid #000080;
+  padding: 10px;
+}
+
+/* Form Styles */
+
+input[type=text] {
+  font-size: 1em;
+  padding: 5px;
+  margin: 0px;
+  display: inline;
+}
+
+input[type=submit] {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+select {
+  font-size: 1.2em;
+}
+
+fieldset {
+  color: #000080;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  max-width: 1000px;
+  table-layout: fixed;
+}
+
+td, th {
+  padding: 5px 20px;
+  background: white;
+  color: black;
+}
+
+th {
+  background: #EEE;
+  color: #000080;
+}
+
+/* zebra stripe the table */
+tr:nth-child(even) {
+  background: #f2f0ff;  /* pale blue */
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: small;
+  }
+  td, th {
+    padding: 5px 10px;
+  }
+}

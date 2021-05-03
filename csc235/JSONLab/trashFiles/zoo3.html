@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- zoo.html - Show how to parse through a JSON object
+  Joshua Sells - joshuataylorsells@gmail.com
+  Written: 12/16/2020
+  -->
+  <title>MyZoo</title>
+  <script>
+    // var myZoo = {"zoo": {"animal":"lion" }};
+    var myZoo = {"zoo": [
+      { "animal":"Elephant-Cat", "population":4, "habitat":"Savana", "nocturnal":false },
+      { "animal":"Bustard", "population":12, "habitat":"Mountains of Zoma-ma-Tant", "nocturnal":true },
+      { "animal":"Joats", "population":5, "habitat":"Tropical Wetlands", "nocturnal":true },
+      { "animal":"Mulligatawny", "population":1, "habitat":"Desert of Zind", "nocturnal":false }
+    ],
+    "botanical": [
+      { "plant":"Tomatoe Tomato", "origin":"Fruit Islands of Tomat" },
+      { "plant":"Waterless Watermelon", "origin":"Southern Reaches of Sahara" },
+      { "plant":"Zippy Do Da", "origin":"Disney World" },
+    ]
+    };
+  </script>
+
+  <!-- Insert the CSS styles-->
+  <link rel="stylesheet" type="text/css" href="zoo.css">
+</head>
+<body>
+  <div id="frame">
+    <h1>My Zoo</h1>
+    <script>
+      // Output to the console using a formatter %o object %s String
+      document.write("[TIP: Look in the console to see the myZoo object.]<hr />");
+      console.log("%o", myZoo);
+      // Output contents of label animal found in the zoo object inside the myZoo variable.
+      document.write("First item in my list: " + myZoo.zoo[0].animal + "<br />");
+      // accessing other items in the JSON data
+      document.write("My botanicals at the zoo include a ");
+      document.write(myZoo.botanical[1].plant + ".<br />");
+    </script>
+  </div>
+</body>
+</html>

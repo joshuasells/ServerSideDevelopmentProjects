@@ -1,0 +1,88 @@
+/* style.css - style sheet for week 6's project
+
+!!!!!!!! CREDIT IS DUE TO THE STUDENT BELOW FOR THIS CODE
+!!!!!!!! I AM JUST USING FOR STYLES IN MY WEBPAGES
+ Peter K. Johnson - peterk@WebExplorations.com
+ Written: 06-04-16
+*/
+body {
+  background: #EEE;
+  font-size: 16px;
+  font-family: optima, helvetica, arial, sans-serif;
+}
+
+h1 {
+  border: 1px #000080 solid;
+  padding: 10px;
+  background: #AAA;
+  color: white;
+}
+
+h2 {
+  color: black;
+  padding: 10px;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+th {
+  font-family: optima, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 20px;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #646f7f),
+  color-stop(100%, #4a5564));
+  background-image: -moz-linear-gradient(#646f7f, #4a5564);
+  background-image: -webkit-linear-gradient(#646f7f, #4a5564);
+  background-image: linear-gradient(#646f7f, #4a5564);
+  border-top: 1px solid #858d99;
+}
+
+th:first-child {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+th:last-child {
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: #CCC;
+}
+
+tr:nth-child(even) {
+  background-color: #EEE;
+}
+
+tr:hover {
+  background-color: #444;
+  color: yellow;
+}
+
+td {
+  padding: 10px;
+}
+  
+#frame {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #000080;
+  padding: 20px;
+}

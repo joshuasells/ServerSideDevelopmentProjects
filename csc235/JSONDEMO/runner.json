@@ -1,0 +1,29 @@
+[
+  { "fName": "Johnny", 
+    "lName": "Hayes",
+    "gender":"male",
+    "phone":"1234567890",
+    "sponsor":"BMW"  
+  },
+  { 
+    "fName": "Robert",
+    "lName": "Fowler",
+    "gender":"male",
+    "phone":"2222222222", 
+    "sponsor":"Nike"  
+  },
+  { 
+    "fName": "James",
+    "lName": "Clark",
+    "gender":"male",
+    "phone":"3333333333",
+    "sponsor":"Avis"  
+  },
+  { 
+    "fName": "Suzie",
+    "lName": "Seachore",
+    "gender":"female",
+    "phone":"0044444455",
+    "sponsor":"Ocean Spray"  
+  }
+]

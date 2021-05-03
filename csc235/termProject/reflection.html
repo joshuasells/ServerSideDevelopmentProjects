@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- reflection.html - reflection on the recipe tracker application
+  Written by: Joshua Sells
+  Date Written: 1/3/2020
+  Revised:
+-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+  <title>Reflection</title>
+</head>
+<body>
+  <div class="jsonFrame">
+    <!-- Navigation -->
+    <header>
+      <a id="logo" href="#"><img src="graphic/logo.png" alt="logo"></a>
+      <nav>
+        <ul class="navLinks">
+          <li><a id="backToTracker" href="index.php">Back to Tracker App</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Navigation -->
+    <h1 id="jsonH1">Reflection</h1>
+    <div id="reflection">
+      <p>Author: Joshua Sells</p>
+      <p>
+        The biggest problem I faced when building this application was trying to keep the code simple.
+        I found myself writing a lot of javaScript to validate everything and prevent bugs from happening. If I could
+        go back and do it again, which I might do, then I would change my design a bit.
+      </p>
+      <p>In the application, all my html buttons are being reused on the fly with javaScript. I change the attributes
+        of the buttons based on what the user clicks on. Because of this, a lot of stuff can go wrong. One thing I would
+        do when re designing is to have a separate button for every operation, and then display it on the page when it needs
+        to be displayed. This way, there will not be all the overlap bugs that I had to keep writing new code to prevent.
+      </p>
+      <p>Another thing I would do I have the buttons for each table row only be visible when the user's mouse is hovering over it.
+        That is another good way to prevent bugs and I think it enhances the user experience.
+      </p>
+      <p>This was a super fun project to make and to this date, it has taught me the most about writing code. I propably put more than
+        100 hours into this.
+      </p>
+      <p>My personal take away is that I feel confident about my ability. I still have a long way to go, but I am beginning to 
+        really belive in myself that I will be a valuable asset to a business someday.
+      </p>
+    </div>
+    <script>
+      getData();
+    </script>
+  </div>
+</body>

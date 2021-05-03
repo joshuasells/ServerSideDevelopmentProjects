@@ -1,0 +1,41 @@
+/* style.css - Style sheet for the term project (createDatabase.php)
+  Joshua Sells
+  Written: 11/19/2020
+  Revised:
+*/
+body {
+  background: #FCEFED;
+  margin: 50px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #42383E;
+}
+
+p {
+  max-width: 1000px;
+}
+
+h2, h3 {
+  color: #42383E;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+}
+
+table {
+  width: 100%;
+  max-width: 1000px;
+}
+
+td, th {
+  padding: 5px 20px;
+  background: white;
+  color: black;
+}
+
+th {
+  background: #EEE;
+  color: #42383E;
+}

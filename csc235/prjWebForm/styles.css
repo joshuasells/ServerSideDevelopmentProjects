@@ -1,0 +1,66 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset#fieldsetAdd {
+  border: #E6D138 solid 1px; /* yellow */
+  border-radius: 3px;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset#fieldsetAdd input[type="submit"] {
+  background: #E6D138;
+  border: #CCB34C solid 3px;
+  margin: .25em 0 0 0;
+  height: 4em;
+  display: block;
+  border-radius: 5px;
+}
+
+fieldset#fieldsetDelete {
+  border: #D01413 solid 1px; /* red */
+  border-radius: 3px;
+}
+
+fieldset#fieldsetDelete input[type="submit"] {
+  background: #D01413;
+  border: #800000 solid 3px; /* dark red */
+  height: 4em;
+  display: block;
+  border-radius: 5px;
+  float: left;
+}
+
+table {
+  width: 70%;
+  margin: .5em;
+  border-collapse: collapse;
+}
+
+table, td {
+  border: 2px solid;
+  padding: .25em;
+}
+
+th {
+  background: #E6D138;
+  border: 2px solid;
+  padding: .5em;
+}
+
+tr:nth-child(even) {
+  background:#E2DBBE;
+}
+
+tr:nth-child(odd) {
+  background: #eee;
+}
+
+img {
+  float: right;
+  width: 35%;
+  margin: -4em 0 1em 0;
+}

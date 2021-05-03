@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- zoo.html - Show how to parse through a JSON object
+  Joshua Sells - joshuataylorsells@gmail.com
+  Written: 12/16/2020
+  -->
+  <title>MyZoo</title>
+  <script>
+    // var myZoo = {"zoo": {"animal":"lion" }};
+    var myZoo = {"zoo": {
+      "animal":"lion", 
+      "population":4, 
+      "habitat":"savana", 
+      "bornWild":false
+    }};
+  </script>
+
+  <!-- Insert the CSS styles-->
+  <link rel="stylesheet" type="text/css" href="zoo.css">
+</head>
+<body>
+  <div id="frame">
+    <h1>My Zoo</h1>
+    <script>
+      // Output to the page
+      document.write(myZoo + "<br />");
+      // Output to the console using a formatter %o object %s String
+      console.log("%o", myZoo);
+      // Output contents of label animal found in the zoo object inside the myZoo variable.
+      document.write(myZoo.zoo.animal + "<br />");
+    </script>
+
+    I have a small zoo it contains
+    <script>
+      document.write(myZoo.zoo.population + " " + myZoo.zoo.animal + "s.<br />");
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "groceryStore": [
+        {
+            "name": "Cereal",
+            "location": "Breakfast",
+            "price": "$5.99",
+            "description": "Yummy food for a quick breakfast."
+        },
+        {
+            "name": "Coffee",
+            "location": "Beverages",
+            "price": "$9.99",
+            "description": "My favorite drink!"
+        },
+        {
+            "name": "Chicken Deli Slices",
+            "location": "Poultry",
+            "price": "$4.99",
+            "description": "What I have for lunch everyday."
+        },
+        {
+            "name": "Oreos",
+            "location": "Snacks",
+            "price": "$3.99",
+            "description": "My favorite cookie!"
+        }
+    ]
+}

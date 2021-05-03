@@ -1,0 +1,40 @@
+{
+	"zoo": [{
+			"animal": "Elephant-Cat",
+			"population": 4,
+			"habitat": "Savana",
+			"nocturnal": false
+		},
+		{
+			"animal": "Bustard",
+			"population": 12,
+			"habitat": "Mountains of Zoma-ma-Tant",
+			"nocturnal": true
+		},
+		{
+			"animal": "Joats",
+			"population": 5,
+			"habitat": "Tropical Wetlands",
+			"nocturnal": true
+		},
+		{
+			"animal": "Mulligatawny",
+			"population": 1,
+			"habitat": "Desert of Zind",
+			"nocturnal": false
+		}
+	],
+	"botanical": [{
+			"plant": "Tomatoe Tomato",
+			"origin": "Fruit Islands of Tomat"
+		},
+		{
+			"plant": "Waterless Watermelon",
+			"origin": "Southern Reaches of Sahara"
+		},
+		{
+			"plant": "Zippy Do Da",
+			"origin": "Disney World"
+		}
+	]
+}

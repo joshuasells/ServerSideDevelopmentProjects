@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="urf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- zoo.html - Show how to parse through a JSON object
+  Joshua Sells - joshuataylorsells@gmail.com
+  Written: 12/16/2020
+  -->
+  <title>MyZoo</title>
+  <script>
+    function getJSON() {
+      // Find the HTML <div> to display the results
+      var result = document.getElementById("result");
+      // Create an AJAX request object
+      var thisRequest = new XMLHttpRequest();
+      thisRequest.open("GET", "zoo4.json", true);
+      // Set up content header to send URL encoded variables
+      // using GET as part of the request asking for JSON type text
+      thisRequest.setRequestHeader("Content-type", "application/json", true);
+      // Run the on ready state change event
+      thisRequest.onreadystatechange = function() {
+        if (thisRequest.readyState == 4 && thisRequest.status == 200) {
+          // parse the response text as JSON data
+          var myZoo = JSON.parse(thisRequest.responseText);
+          var stringToDisplay = "";
+          // Clear the result box before displaying new data
+          result.innerHTML = "";
+
+          // Append each string, forming one long string with the HTML table elements.
+          stringToDisplay += "<table><thead><tr>";
+          stringToDisplay += "<th>Name</th><th>Habitat</th><th>Population</th></tr></thead>";
+          for (var count = 0; count < myZoo.zoo.length; count++) {
+            stringToDisplay += "<tr>";
+              stringToDisplay += "<td>" +myZoo.zoo[count].animal + "</td>";
+              stringToDisplay += "<td>" +myZoo.zoo[count].habitat + "</td>";
+              stringToDisplay += "<td>" +myZoo.zoo[count].population + "</td>";
+            stringToDisplay += "</tr>";
+          } // end of for
+          stringToDisplay += "</table>";
+          // Display the String containing the HTML table output as the text of the #result <div>.
+          result.innerHTML = stringToDisplay;
+        } // end of if
+      } // end of function()
+      thisRequest.send(null);
+      result.innerHTML = "<br />Requesting data from server...";
+    } // end of getJSON()
+  </script>
+
+  <!-- Insert the CSS styles-->
+  <link rel="stylesheet" type="text/css" href="zoo.css">
+</head>
+<body>
+  <div id="frame">
+    <h1>My Zoo Animals and Botanicals</h1>
+    <div id="result"></div>
+    <script>
+      // Call the AJAX request function
+      getJSON();
+    </script>
+    <p>NOTE: This is all client-side JavaScript using AJAX. No PHP needed. (But, it does have to run on a server.)</p>
+  </div>
+</body>
+</html>
